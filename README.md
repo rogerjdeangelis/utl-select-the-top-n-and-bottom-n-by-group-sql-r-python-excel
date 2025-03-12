@@ -390,7 +390,7 @@ Select the top n and bottom n by group base sas and sql r and python
            *
           ,seq-min(seq) + 1 as partition
          from
-           (select *, &minus*monotonic() as seq from sd1.have)
+           (select *, &minus*monotonic() as seq from &dsn)
          group
            by &by )
        group
